@@ -6,7 +6,7 @@ name: Aggiorna Annunci GRS Cars
   workflow_dispatch:
 
 jobs:
-scrape:
+  scrape:
   runs-on: ubuntu-latest
   steps:
     - name: Checkout repository
