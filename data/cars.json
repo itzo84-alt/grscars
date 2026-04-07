@@ -1,5 +1,5 @@
 {
-  "ultimo_aggiornamento": "07/04/2026 alle 22:03",
+  "ultimo_aggiornamento": "07/04/2026 alle 22:06",
   "totale_auto": 1,
   "auto": [
     {
@@ -9,8 +9,15 @@
       "carburante": "",
       "cambio": "",
       "prezzo": 1400,
-      "foto": "",
-      "galleria": [],
+      "foto": "https://www.ivanovhristo.com/grscars/img/cars/0_0.jpg",
+      "galleria": [
+        "https://www.ivanovhristo.com/grscars/img/cars/0_0.jpg",
+        "https://www.ivanovhristo.com/grscars/img/cars/0_1.jpg",
+        "https://www.ivanovhristo.com/grscars/img/cars/0_2.jpg",
+        "https://www.ivanovhristo.com/grscars/img/cars/0_3.jpg",
+        "https://www.ivanovhristo.com/grscars/img/cars/0_4.jpg",
+        "https://www.ivanovhristo.com/grscars/img/cars/0_5.jpg"
+      ],
       "link": "https://www.subito.it/auto/daewoo-matiz-1-0-neopatentati-116-900km-1-400-euro-roma-641990391.htm"
     }
   ]
