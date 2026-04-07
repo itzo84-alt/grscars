@@ -1,5 +1,5 @@
 {
-  "ultimo_aggiornamento": "07/04/2026 alle 21:22",
+  "ultimo_aggiornamento": "07/04/2026 alle 21:23",
   "totale_auto": 1,
   "auto": [
     {
@@ -9,15 +9,8 @@
       "carburante": "",
       "cambio": "",
       "prezzo": 1400,
-      "foto": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/1a/1a3ae10e-f019-4210-96d1-e2f00c3b04a9",
-      "galleria": [
-        "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/1a/1a3ae10e-f019-4210-96d1-e2f00c3b04a9",
-        "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/b3/b3208079-95e5-4669-9c80-8851d3f50a17",
-        "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/b5/b5efa955-1636-4ab0-8ea6-3d9fc78dad34",
-        "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/21/21d23ab3-0435-487a-bee5-ade102598ae3",
-        "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/5a/5ace7fb3-1e0c-44c7-87fd-fd74f0679557",
-        "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/08/08317ce6-f1a1-46c5-a3b9-4486932e2721"
-      ],
+      "foto": "",
+      "galleria": [],
       "link": "https://www.subito.it/auto/daewoo-matiz-1-0-neopatentati-116-900km-1-400-euro-roma-641990391.htm"
     }
   ]
