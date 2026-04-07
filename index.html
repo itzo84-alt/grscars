@@ -1,0 +1,60 @@
+<html lang="it"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRS Cars - Vendita &amp; Noleggio Auto Usate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="img/grscars_logo.jpg" alt="GRS Cars" class="logo">
+    <p class="sottotitolo">VENDITA &amp; NOLEGGIO</p>
+  </header>
+
+  <!-- TITOLO -->
+  <section class="hero">
+    <h1>LA TUA PROSSIMA AUTO USATA</h1>
+    <p id="info-update"></p>
+  </section>
+
+  <!-- GRIGLIA AUTO -->
+  <main>
+    <div id="car-grid">
+      <div class="skeleton"></div>
+      <div class="skeleton"></div>
+      <div class="skeleton"></div>
+    </div>
+  </main>
+
+  <!-- POPUP GALLERIA FOTO -->
+  <div id="popup-overlay" class="hidden">
+    <div id="popup">
+      <button id="popup-close">✕</button>
+      <div id="popup-foto">
+        <button id="prev">←</button>
+        <img id="popup-img" src="" alt="">
+        <button id="next">→</button>
+      </div>
+      <p id="foto-counter"></p>
+      <div id="popup-info">
+        <h2 id="popup-titolo"></h2>
+        <p id="popup-dettagli"></p>
+        <p id="popup-prezzo"></p>
+        <a id="popup-link" href="" target="_blank">VAI ALL'ANNUNCIO</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      © 2024 GRS Cars S.r.l · Via Demetriade, 95 00178, Roma · 
+      <a href="mailto:info@grscars.it">info@grscars.it</a> · 
+      P. IVA: 14344951000
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body></html>

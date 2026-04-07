@@ -1,0 +1,289 @@
+---
+
+## 2. `style.css`
+
+```css
+/* ── RESET ── */
+*, *::before, *::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background: #000;
+color: #fff;
+font-family: Arial, sans-serif;
+}
+
+/* ── HEADER ── */
+header {
+text-align: center;
+padding: 28px 20px 12px;
+border-bottom: 1px solid #1a1a1a;
+}
+
+.logo {
+width: 200px;
+max-width: 70vw;
+}
+
+.sottotitolo {
+font-size: 0.7rem;
+letter-spacing: 5px;
+color: #888;
+margin-top: 6px;
+}
+
+/* ── HERO ── */
+.hero {
+text-align: center;
+padding: 50px 20px 20px;
+}
+
+.hero h1 {
+font-size: clamp(1.1rem, 3vw, 1.8rem);
+font-weight: 300;
+letter-spacing: 6px;
+}
+
+#info-update {
+font-size: 0.72rem;
+color: #666;
+margin-top: 10px;
+}
+
+/* ── GRIGLIA ── */
+main {
+max-width: 1100px;
+margin: 30px auto;
+padding: 0 20px;
+}
+
+#car-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px 24px;
+}
+
+/* ── CARD ── */
+.car-card {
+cursor: pointer;
+padding-bottom: 24px;
+border-bottom: 1px solid #2a2a2a;
+transition: transform 0.2s;
+}
+
+.car-card:hover {
+transform: translateY(-5px);
+}
+
+.car-card:hover .btn-annuncio {
+background: #e74c3c;
+}
+
+.car-card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+display: block;
+}
+
+.car-body {
+padding: 12px 2px 0;
+}
+
+.car-body h3 {
+font-size: 0.95rem;
+font-weight: 600;
+margin-bottom: 6px;
+line-height: 1.3;
+}
+
+.dettagli {
+font-size: 0.76rem;
+color: #999;
+line-height: 1.6;
+margin-bottom: 14px;
+}
+
+.prezzo {
+font-size: 1.5rem;
+font-weight: 700;
+margin-bottom: 14px;
+}
+
+.btn-annuncio {
+display: block;
+width: 100%;
+background: #c0392b;
+color: #fff;
+text-align: center;
+padding: 11px;
+font-size: 0.75rem;
+font-weight: 700;
+letter-spacing: 2px;
+text-decoration: none;
+transition: background 0.2s;
+}
+
+/* ── SKELETON LOADING ── */
+.skeleton {
+height: 360px;
+background: linear-gradient(90deg, #111 25%, #1f1f1f 50%, #111 75%);
+background-size: 200% 100%;
+animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+0%   { background-position: 200% 0; }
+100% { background-position: -200% 0; }
+}
+
+/* ── POPUP GALLERIA ── */
+#popup-overlay {
+position: fixed;
+inset: 0;
+background: rgba(0,0,0,0.92);
+z-index: 1000;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px;
+}
+
+#popup-overlay.hidden {
+display: none;
+}
+
+#popup {
+background: #111;
+width: 100%;
+max-width: 700px;
+border-radius: 4px;
+overflow: hidden;
+position: relative;
+}
+
+#popup-close {
+position: absolute;
+top: 12px;
+right: 14px;
+background: none;
+border: none;
+color: #fff;
+font-size: 1.4rem;
+cursor: pointer;
+z-index: 10;
+}
+
+#popup-foto {
+position: relative;
+background: #000;
+display: flex;
+align-items: center;
+}
+
+#popup-img {
+width: 100%;
+height: 340px;
+object-fit: cover;
+}
+
+#prev, #next {
+position: absolute;
+background: rgba(0,0,0,0.6);
+border: none;
+color: #fff;
+font-size: 1.5rem;
+padding: 12px 16px;
+cursor: pointer;
+z-index: 5;
+}
+
+#prev { left: 0; }
+#next { right: 0; }
+
+#prev:hover, #next:hover {
+background: rgba(192,57,43,0.8);
+}
+
+#foto-counter {
+text-align: center;
+font-size: 0.75rem;
+color: #666;
+padding: 8px;
+background: #000;
+}
+
+#popup-info {
+padding: 16px 20px 20px;
+}
+
+#popup-titolo {
+font-size: 1.1rem;
+margin-bottom: 6px;
+}
+
+#popup-dettagli {
+font-size: 0.78rem;
+color: #999;
+margin-bottom: 10px;
+}
+
+#popup-prezzo {
+font-size: 1.6rem;
+font-weight: 700;
+margin-bottom: 14px;
+}
+
+#popup-link {
+display: block;
+background: #c0392b;
+color: #fff;
+text-align: center;
+padding: 12px;
+font-size: 0.8rem;
+font-weight: 700;
+letter-spacing: 2px;
+text-decoration: none;
+}
+
+#popup-link:hover {
+background: #e74c3c;
+}
+
+/* ── FOOTER ── */
+footer {
+text-align: center;
+padding: 30px 20px;
+margin-top: 40px;
+border-top: 1px solid #1a1a1a;
+font-size: 0.72rem;
+color: #555;
+}
+
+footer a {
+color: #c0392b;
+text-decoration: none;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+#car-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 540px) {
+#car-grid {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.hero h1 {
+  letter-spacing: 3px;
+}
+#popup-img {
+  height: 220px;
+}
+}
