@@ -1,28 +1,24 @@
 name: Aggiorna Annunci GRS Cars
 
 "on":
-  schedule:
+schedule:
   - cron: '0 */2 * * *'
-  workflow_dispatch:
+workflow_dispatch:
 
 jobs:
-  scrape:
+scrape:
   runs-on: ubuntu-latest
   steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-
     - name: Setup Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
-
     - name: Installa librerie
       run: pip install requests
-
     - name: Esegui scraper
       run: python scripts/scraper.py
-
     - name: Salva aggiornamenti
       run: |
         git config user.name "GRS Cars Bot"
