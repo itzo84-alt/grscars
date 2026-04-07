@@ -1,6 +1,6 @@
 name: Aggiorna Annunci GRS Cars
 
-on:
+"on":
 schedule:
   - cron: '0 */2 * * *'
 workflow_dispatch:
